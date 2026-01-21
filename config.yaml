@@ -1,5 +1,5 @@
 proxy-groups:
-  - name: 节点选择
+  - name: 默认代理
     icon: >-
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
@@ -30,7 +30,7 @@ proxy-groups:
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
     type: select
     proxies:
-      - 节点选择
+      - 默认代理
       - 自动选择
       - 狮城节点
       - 香港节点
@@ -45,7 +45,7 @@ proxy-groups:
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
     proxies:
-      - 节点选择
+      - 默认代理
       - 自动选择
       - 狮城节点
       - 香港节点
@@ -60,7 +60,7 @@ proxy-groups:
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
     type: select
     proxies:
-      - 节点选择
+      - 默认代理
       - 自动选择
       - 狮城节点
       - 香港节点
@@ -75,7 +75,7 @@ proxy-groups:
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
     type: select
     proxies:
-      - 节点选择
+      - 默认代理
       - 自动选择
       - 奈飞节点
       - 狮城节点
@@ -92,7 +92,7 @@ proxy-groups:
     type: select
     proxies:
       - 台湾节点
-      - 节点选择
+      - 默认代理
       - 手动切换
       - DIRECT
   - name: 哔哩哔哩
@@ -108,7 +108,7 @@ proxy-groups:
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
     type: select
     proxies:
-      - 节点选择
+      - 默认代理
       - 自动选择
       - 香港节点
       - 台湾节点
@@ -129,27 +129,13 @@ proxy-groups:
       - 狮城节点
       - 日本节点
       - 手动切换
-  - name: 谷歌FCM
-    icon: >-
-      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
-    type: select
-    proxies:
-      - DIRECT
-      - 节点选择
-      - 美国节点
-      - 香港节点
-      - 台湾节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 手动切换
   - name: 微软Bing
     icon: >-
       https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/bing.png
     type: select
     proxies:
       - DIRECT
-      - 节点选择
+      - 默认代理
       - 美国节点
       - 香港节点
       - 台湾节点
@@ -163,7 +149,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 节点选择
+      - 默认代理
       - 美国节点
       - 香港节点
       - 台湾节点
@@ -176,7 +162,7 @@ proxy-groups:
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
     proxies:
-      - 节点选择
+      - 默认代理
       - DIRECT
       - 美国节点
       - 香港节点
@@ -191,7 +177,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 节点选择
+      - 默认代理
       - 美国节点
       - 香港节点
       - 台湾节点
@@ -205,7 +191,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 节点选择
+      - 默认代理
       - 美国节点
       - 香港节点
       - 台湾节点
@@ -213,23 +199,13 @@ proxy-groups:
       - 日本节点
       - 韩国节点
       - 手动切换
-  - name: 网易音乐
-    icon: >-
-      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
-    type: select
-    include-all: true
-    filter: (?i)网易|音乐|NetEase|Music
-    proxies:
-      - DIRECT
-      - 节点选择
-      - 自动选择
   - name: 全球直连
     icon: >-
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
     proxies:
       - DIRECT
-      - 节点选择
+      - 默认代理
       - 自动选择
   - name: 广告拦截
     icon: >-
@@ -250,7 +226,7 @@ proxy-groups:
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
     proxies:
-      - 节点选择
+      - 默认代理
       - 自动选择
       - DIRECT
       - 香港节点
@@ -320,7 +296,7 @@ proxy-groups:
     include-all: true
     type: select
     proxies:
-      - 节点选择
+      - 默认代理
       - 手动切换
       - 自动选择
       - 电报消息
@@ -331,13 +307,11 @@ proxy-groups:
       - 哔哩哔哩
       - 国外媒体
       - 国内媒体
-      - 谷歌FCM
       - 微软Bing
       - 微软云盘
       - 微软服务
       - 苹果服务
       - 游戏平台
-      - 网易音乐
       - 全球直连
       - 广告拦截
       - 应用净化
@@ -376,14 +350,6 @@ rule-providers:
     url: >-
       https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
     path: ./ruleset/BanProgramAD.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  GoogleFCM:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
-    path: ./ruleset/GoogleFCM.list
     behavior: classical
     interval: 86400
     format: text
@@ -446,14 +412,6 @@ rule-providers:
     url: >-
       https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
     path: ./ruleset/OpenAi.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  NetEaseMusic:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
-    path: ./ruleset/NetEaseMusic.list
     behavior: classical
     interval: 86400
     format: text
@@ -591,7 +549,6 @@ rules:
   - 'RULE-SET,UnBan,全球直连'
   - 'RULE-SET,BanAD,广告拦截'
   - 'RULE-SET,BanProgramAD,应用净化'
-  - 'RULE-SET,GoogleFCM,谷歌FCM'
   - 'RULE-SET,GoogleCN,全球直连'
   - 'RULE-SET,SteamCN,全球直连'
   - 'RULE-SET,Bing,微软Bing'
@@ -600,7 +557,6 @@ rules:
   - 'RULE-SET,Apple,苹果服务'
   - 'RULE-SET,Telegram,电报消息'
   - 'RULE-SET,OpenAi,OpenAi'
-  - 'RULE-SET,NetEaseMusic,网易音乐'
   - 'RULE-SET,Epic,游戏平台'
   - 'RULE-SET,Origin,游戏平台'
   - 'RULE-SET,Sony,游戏平台'
@@ -613,7 +569,7 @@ rules:
   - 'RULE-SET,Bilibili,哔哩哔哩'
   - 'RULE-SET,ChinaMedia,国内媒体'
   - 'RULE-SET,ProxyMedia,国外媒体'
-  - 'RULE-SET,ProxyGFWlist,节点选择'
+  - 'RULE-SET,ProxyGFWlist,默认代理'
   - 'RULE-SET,ChinaDomain,全球直连'
   - 'RULE-SET,ChinaCompanyIp,全球直连'
   - 'RULE-SET,Download,全球直连'
