@@ -86,15 +86,6 @@ proxy-groups:
       - 韩国节点
       - 手动切换
       - DIRECT
-  - name: 巴哈姆特
-    icon: >-
-      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
-    type: select
-    proxies:
-      - 台湾节点
-      - 默认代理
-      - 手动切换
-      - DIRECT
   - name: 哔哩哔哩
     icon: >-
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
@@ -303,7 +294,6 @@ proxy-groups:
       - OpenAi
       - 油管视频
       - 奈飞视频
-      - 巴哈姆特
       - 哔哩哔哩
       - 国外媒体
       - 国内媒体
@@ -472,14 +462,6 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  Bahamut:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list
-    path: ./ruleset/Bahamut.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
   BilibiliHMT:
     url: >-
       https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/BilibiliHMT.list
@@ -564,7 +546,6 @@ rules:
   - 'RULE-SET,Nintendo,游戏平台'
   - 'RULE-SET,YouTube,油管视频'
   - 'RULE-SET,Netflix,奈飞视频'
-  - 'RULE-SET,Bahamut,巴哈姆特'
   - 'RULE-SET,BilibiliHMT,哔哩哔哩'
   - 'RULE-SET,Bilibili,哔哩哔哩'
   - 'RULE-SET,ChinaMedia,国内媒体'
