@@ -40,7 +40,7 @@ proxy-groups:
       - 韩国节点
       - 手动切换
       - DIRECT
-  - name: OpenAi
+  - name: AI平台
     icon: >-
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
@@ -291,7 +291,7 @@ proxy-groups:
       - 手动切换
       - 自动选择
       - 电报消息
-      - OpenAi
+      - AI平台
       - 油管视频
       - 奈飞视频
       - 哔哩哔哩
@@ -400,7 +400,7 @@ rule-providers:
     type: http
   OpenAi:
     url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list
     path: ./ruleset/OpenAi.list
     behavior: classical
     interval: 86400
