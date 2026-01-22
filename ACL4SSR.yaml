@@ -287,6 +287,8 @@ proxy-groups:
     include-all: true
     type: select
     proxies:
+      - DIRECT
+      - REJECT
       - 默认代理
       - 手动选择
       - 自动选择
