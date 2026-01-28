@@ -91,6 +91,7 @@ proxy-groups:
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
     type: select
     proxies:
+      - DIRECT
       - 全球直连
       - 台湾节点
       - 香港节点
