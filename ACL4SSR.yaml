@@ -86,16 +86,8 @@ proxy-groups:
       - 韩国节点
       - 手动选择
       - DIRECT
-  - name: 哔哩哔哩
-    icon: >-
-      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
-    type: select
-    proxies:
-      - DIRECT
-      - 全球直连
-      - 台湾节点
-      - 香港节点
-  - name: 国外媒体
+
+    - name: 国外媒体
     icon: >-
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
     type: select
@@ -110,6 +102,17 @@ proxy-groups:
       - 韩国节点
       - 手动选择
       - DIRECT
+          
+  - name: 哔哩哔哩
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
+    type: select
+    proxies:
+      - DIRECT
+      - 全球直连
+      - 台湾节点
+      - 香港节点
+
   - name: 国内媒体
     icon: >-
       https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
