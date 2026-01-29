@@ -532,7 +532,7 @@ function buildProxyGroups({
             "proxies": defaultProxies
         },
         {
-            "name": "Microsoft",
+            "name": "Apple",
             "icon": "https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png",    
             "type": "select",
             "proxies": defaultProxies
