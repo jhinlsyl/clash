@@ -200,8 +200,10 @@ const baseRules = [
     `RULE-SET,SteamFix,${PROXY_GROUPS.DIRECT}`,
     "GEOSITE,CATEGORY-AI-!CN,AI",
     `GEOSITE,MICROSOFT@CN,${PROXY_GROUPS.DIRECT}`,
+    `GEOSITE,APPLE@CN,${PROXY_GROUPS.DIRECT}`,
     "GEOSITE,ONEDRIVE,OneDrive",
     "GEOSITE,MICROSOFT,Microsoft",
+    "GEOSITE,APPLE,Apple",
     "GEOSITE,TELEGRAM,Telegram",
     "GEOSITE,YOUTUBE,YouTube",
     "GEOSITE,NETFLIX,Netflix",
@@ -526,6 +528,12 @@ function buildProxyGroups({
         {
             "name": "Microsoft",
             "icon": "https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Microsoft_Copilot.png",    
+            "type": "select",
+            "proxies": defaultProxies
+        },
+        {
+            "name": "Microsoft",
+            "icon": "https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png",    
             "type": "select",
             "proxies": defaultProxies
         },
